@@ -11,6 +11,7 @@ White: #FFF
 body {
     font-family: 'Lato';
     margin: 0;
+
 }
 
 nav > img {
@@ -19,6 +20,7 @@ nav > img {
 
 ul {
     display: flex;
+
     width: 480px;
     justify-content: space-around;
     list-style: none;
@@ -35,6 +37,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 8px 24px;
+
 }
 
 header {
@@ -42,11 +45,13 @@ header {
     background-size: cover;
     background-position: center;
     height: 800px;
+
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 header p {
@@ -55,6 +60,7 @@ header p {
     font-weight: 100;
     width: 560px;
     text-align: center;
+
 }
 
 p, li {
@@ -63,6 +69,7 @@ p, li {
 }
 
 article img {
+
     height: 60px;
 }
 
@@ -212,3 +219,4 @@ h4 {
     }
 
 }
+
