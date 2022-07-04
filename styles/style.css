@@ -1,16 +1,17 @@
+
 /*
 Colors:
-
 Text: 1A1A1A
 Green: #00B172
 White: #FFF
-
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 body {
     font-family: 'Lato';
+    margin: 0;
+
 }
 
 nav > img {
@@ -19,16 +20,24 @@ nav > img {
 
 ul {
     display: flex;
-    width: 400px;
+
+    width: 480px;
     justify-content: space-around;
     list-style: none;
     text-decoration: none;
+    margin-right: 1.5em;
 }
 
 nav {
+    position: fixed;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 24px;
+
 }
 
 header {
@@ -36,11 +45,22 @@ header {
     background-size: cover;
     background-position: center;
     height: 800px;
-    color: #fff
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 header p {
     color: #fff;
+    font-size: 1.5em;
+    font-weight: 100;
+    width: 560px;
+    text-align: center;
+
 }
 
 p, li {
@@ -49,14 +69,154 @@ p, li {
 }
 
 article img {
-    height: 48px;
-}
 
-section {
-
+    height: 60px;
 }
 
 footer {
     background-color: #00B172;
+    position: relative;
+    margin: 0 30px;
+    padding: 10px 80px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+h2 {
+   text-decoration: underline;
+    text-underline-offset: 8px;
+    margin: 50px 0;
+    font-size: 1.6em;
+    
+}
+
+#titlea {
+    text-align: center;
+    text-decoration-color: #00B172;
+}
+
+#titleb {
+    color: #fff;
+}
+
+#whatson {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section {
+    height: 340px;
+}
+
+section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 33% 0 0;
+    text-align: center;
+}
+
+section article p {
+    width: 200px;
+    font-size: 1.1em;
+}
+
+h3 {
+    color:#00B172;
+    font-weight: 800;
+}
+
+#kanye {
+    width: 275px;
+}
+
+#logo {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#yeezy {
+    display: flex;
+    justify-content: space-between;
+}
+
+#articles, #articles p {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+#articles p {
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    header p {
+        width: 50%;
+    }
+
+    #kanye {
+        max-width: 34%;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+  
+    footer {
+        margin: 0 0;
+        padding: 2em;
+        width: 100%;
+        height: 100%;
+    }    
+    
+    header {
+        text-align: center;
+    }
+
+    header p {
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    #yeezy {
+        flex-direction: column;
+    }
+
+    #whatson {
+        flex-direction: column;
+    }
+
+    nav img {
+        height: 40%;
+    }
+
+    a {
+        font-size: 0.7em;
+    }
+    nav ul {
+        width: 60%;
+    }
+
+    section {
+        height: 100%;
+    }
+
 }
 
